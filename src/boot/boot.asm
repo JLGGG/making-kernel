@@ -64,7 +64,7 @@ gdt_descriptor:
 times 510- ($ - $$) db 0
 dw 0xAA55 ; boot signature
 
-; * Used Instructions *
+; // -------------------- Used Instructions --------------------
 ; nasm -f bin ./boot.asm -o ./boot.bin: making bin
 ; ndisasm ./boot.bin: disassembly output
 ; qemu-system-x86_64 -hda ./boot.bin: running it on QEMU
